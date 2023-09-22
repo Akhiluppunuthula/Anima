@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 20px 10px;
+            position: absolute;
+            top:40%;
+            left: 50%;
+            background-color: aquamarine;
+            border-radius: 20px;
+        }
+        .card{
+            visibility: hidden;
+        }
+        .card p{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            background: royalblue;
+            transition: left 300ms linear, margin-left 300ms ease-out;
+        }
+        button:hover+.card{
+            width: 200px;
+            height: 200px;
+            background-color: aliceblue;
+            cursor: pointer;
+            visibility: visible;
+            position: absolute;
+            transition: 2s ease-out 1s;
+            top:50%;
+            left: 60%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <button>Hover me</button>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit vel itaque odit? Error doloremque veritatis magnam natus, ipsum numquam!</p>
+        </div>
+    </div>
+</body>
+</html>
